@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .neumorph {
+    background: #f0f4f8;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .neumorph-sm {
+    background: #f0f4f8;
+    box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+    border-radius: 0.75rem;
+  }
+
+  .neumorph-inset {
+    background: #f0f4f8;
+    box-shadow: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+    border-radius: 0.5rem;
+  }
+
+  .neumorph-btn {
+    background: #f0f4f8;
+    box-shadow: 4px 4px 8px #d1d9e6, -4px -4px 8px #ffffff;
+    border-radius: 0.75rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .neumorph-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 12px #d1d9e6, -6px -6px 12px #ffffff;
+  }
+
+  .neumorph-btn:active {
+    transform: translateY(0);
+    box-shadow: inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+:root {
+  --background: #f0f4f8;
+  --foreground: #334155;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
