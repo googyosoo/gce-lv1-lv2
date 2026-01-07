@@ -268,6 +268,81 @@ export const lv1Questions: Question[] = [
       en: "While Classroom itself is a management tool, you can integrate apps and find resources via the Marketplace or add-ons.",
       ko: "클래스룸 자체는 관리 도구이지만 Marketplace나 부가기능을 통해 앱을 통합하고 리소스를 찾을 수 있습니다."
     }
+  },
+  {
+    id: 16,
+    question: {
+      en: "You want to quickly create a meeting event from a Gmail message. What is the most efficient way?",
+      ko: "Gmail 메시지에서 바로 회의 일정을 빠르게 만들고 싶습니다. 가장 효율적인 방법은 무엇입니까?"
+    },
+    options: [
+      { en: "Copy the text and paste into Calendar", ko: "텍스트를 복사하여 캘린더에 붙여넣기" },
+      { en: "Open Calendar in a new tab and create event", ko: "새 탭에서 캘린더를 열고 일정 만들기" },
+      { en: "Click the 'Create event' icon in the right sidebar within Gmail", ko: "Gmail 우측 사이드바의 '일정 만들기' 아이콘 클릭" },
+      { en: "Forward the email to yourself", ko: "이메일을 자신에게 전달하기" }
+    ],
+    answer: 2,
+    type: 'single'
+  },
+  {
+    id: 17,
+    question: {
+      en: "Which feature in Google Docs allows multiple students to work on the same document simultaneously without overwriting each other's work?",
+      ko: "Google 문서에서 여러 학생이 서로의 작업을 덮어쓰지 않고 동시에 같은 문서를 작업할 수 있게 해주는 기능은 무엇입니까?"
+    },
+    options: [
+      { en: "Real-time collaboration", ko: "실시간 협업" },
+      { en: "Track Changes", ko: "변경 내용 추적" },
+      { en: "Version History", ko: "버전 기록" },
+      { en: "Offline Access", ko: "오프라인 액세스" }
+    ],
+    answer: 0,
+    type: 'single'
+  },
+  {
+    id: 18,
+    question: {
+      en: "You want to organize your Google Drive files by color-coding folders. How can you do this?",
+      ko: "Google 드라이브 파일을 폴더 색상 코딩으로 정리하고 싶습니다. 어떻게 할 수 있습니까?"
+    },
+    options: [
+      { en: "You cannot change folder colors", ko: "폴더 색상은 변경할 수 없습니다." },
+      { en: "Right-click the folder > Change color", ko: "폴더 우클릭 > 색상 변경" },
+      { en: "Use a third-party extension", ko: "타사 확장 프로그램 사용" },
+      { en: "Rename the folder with a color name", ko: "폴더 이름을 색상 이름으로 변경" }
+    ],
+    answer: 1,
+    type: 'single'
+  },
+  {
+    id: 19,
+    question: {
+      en: "In Google Slides, you want to ensure that text stays consistent throughout your presentation. What should you edit?",
+      ko: "Google 프레젠테이션에서 프레젠테이션 전체의 텍스트 일관성을 유지하고 싶습니다. 무엇을 편집해야 합니까?"
+    },
+    options: [
+      { en: "Each slide individually", ko: "각 슬라이드 개별 편집" },
+      { en: "The Master Slide (Theme Builder)", ko: "마스터 슬라이드 (테마 빌더)" },
+      { en: "Speaker Notes", ko: "발표자 노트" },
+      { en: "Page Setup", ko: "페이지 설정" }
+    ],
+    answer: 1,
+    type: 'single'
+  },
+  {
+    id: 20,
+    question: {
+      en: "Which tool allows you to collect feedback from students and automatically visualize the results in a spreadsheet?",
+      ko: "학생들로부터 피드백을 수집하고 결과를 스프레드시트에서 자동으로 시각화할 수 있게 해주는 도구는 무엇입니까?"
+    },
+    options: [
+      { en: "Google Keep", ko: "Google Keep" },
+      { en: "Google Forms", ko: "Google 설문지" },
+      { en: "Google Chat", ko: "Google Chat" },
+      { en: "Jamboard", ko: "Jamboard" }
+    ],
+    answer: 1,
+    type: 'single'
   }
 ];
 

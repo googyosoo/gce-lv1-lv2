@@ -233,6 +233,81 @@ export const lv2Questions: Question[] = [
         ],
         answer: 1,
         type: 'single'
+    },
+    {
+        id: 16,
+        question: {
+            en: "You want to notify a specific user in a comment within a Google Sheet. What character should you use?",
+            ko: "Google 스프레드시트의 댓글 내에서 특정 사용자에게 알림을 보내고 싶습니다. 어떤 문자를 사용해야 합니까?"
+        },
+        options: [
+            { en: "# or !", ko: "# 또는 !" },
+            { en: "+ or @", ko: "+ 또는 @" },
+            { en: "$ or %", ko: "$ 또는 %" },
+            { en: "* or &", ko: "* 또는 &" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 17,
+        question: {
+            en: "Which function allows you to import data from one Google Spreadsheet to another?",
+            ko: "한 Google 스프레드시트에서 다른 스프레드시트로 데이터를 가져올 수 있는 함수는 무엇입니까?"
+        },
+        options: [
+            { en: "=IMPORTSHEET", ko: "=IMPORTSHEET" },
+            { en: "=IMPORTRANGE", ko: "=IMPORTRANGE" },
+            { en: "=IMPORTDATA", ko: "=IMPORTDATA" },
+            { en: "=GETSHEETDATA", ko: "=GETSHEETDATA" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 18,
+        question: {
+            en: "You want to create a distribution group for emailing parents without revealing their email addresses to each other. What feature of Google Groups should you use?",
+            ko: "학부모의 이메일 주소를 서로 공개하지 않고 이메일을 보낼 수 있는 배포 그룹을 만들고 싶습니다. Google 그룹스의 어떤 기능을 사용해야 합니까?"
+        },
+        options: [
+            { en: "Email List", ko: "이메일 목록" },
+            { en: "Web Forum", ko: "웹 포럼" },
+            { en: "Q&A Forum", ko: "Q&A 포럼" },
+            { en: "BCC or 'Announcement Only' group settings", ko: "숨은 참조(BCC) 또는 '공지만 가능' 그룹 설정" }
+        ],
+        answer: 3,
+        type: 'single'
+    },
+    {
+        id: 19,
+        question: {
+            en: "In Google Scholar, you found an article you want to save for later reading. Where does the 'Star' icon save it to?",
+            ko: "Google 학술검색에서 나중에 읽고 싶은 기사를 찾았습니다. '별표' 아이콘을 클릭하면 어디에 저장됩니까?"
+        },
+        options: [
+            { en: "Google Drive", ko: "Google 드라이브" },
+            { en: "Your specific My Library in Scholar", ko: "Scholar의 내 서재" },
+            { en: "Chrome Bookmarks", ko: "Chrome 북마크" },
+            { en: "Google Keep", ko: "Google Keep" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 20,
+        question: {
+            en: "You want to restrict a Google Form so that only users within your school domain can access it. Where is this setting found?",
+            ko: "학교 도메인 내의 사용자만 Google 설문지에 액세스할 수 있도록 제한하고 싶습니다. 이 설정은 어디에 있습니까?"
+        },
+        options: [
+            { en: "Form Settings (General)", ko: "설문지 설정 (일반)" },
+            { en: "Question Settings", ko: "질문 설정" },
+            { en: "Send Button Options", ko: "보내기 버튼 옵션" },
+            { en: "Script Editor", ko: "스크립트 편집기" }
+        ],
+        answer: 0,
+        type: 'single'
     }
 ];
 
