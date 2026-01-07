@@ -20,6 +20,13 @@ export interface Scenario {
   tasks: BilingualText[];
 }
 
+export interface StudyTip {
+  id: number;
+  title: BilingualText;
+  content: BilingualText;
+  category: string;
+}
+
 export const lv1Questions: Question[] = [
   {
     id: 1,
@@ -103,6 +110,164 @@ export const lv1Questions: Question[] = [
     ],
     answer: 2,
     type: 'single'
+  },
+  {
+    id: 6,
+    question: {
+      en: "You want to share a Google Doc with a colleague so they can only view it, but not make changes or comments. Which permission should you set?",
+      ko: "동료에게 Google 문서를 공유하여 동료가 문서를 볼 수만 있고 변경하거나 댓글을 달 수 없도록 하려고 합니다. 어떤 권한을 설정해야 합니까?"
+    },
+    options: [
+      { en: "Viewer", ko: "뷰어" },
+      { en: "Commenter", ko: "댓글 작성자" },
+      { en: "Editor", ko: "편집자" },
+      { en: "Owner", ko: "소유자" }
+    ],
+    answer: 0,
+    type: 'single'
+  },
+  {
+    id: 7,
+    question: {
+      en: "To create a self-grading quiz, which tool should you use?",
+      ko: "자동 채점 퀴즈를 만들려면 어떤 도구를 사용해야 합니까?"
+    },
+    options: [
+      { en: "Google Docs", ko: "Google 문서" },
+      { en: "Google Slides", ko: "Google 프레젠테이션" },
+      { en: "Google Forms", ko: "Google 설문지" },
+      { en: "Google Drawings", ko: "Google 드로잉" }
+    ],
+    answer: 2,
+    type: 'single'
+  },
+  {
+    id: 8,
+    question: {
+      en: "You want to organize your Chrome browser tabs for a project. What feature allows you to group related tabs together?",
+      ko: "프로젝트를 위해 Chrome 브라우저 탭을 정리하고 싶습니다. 관련 탭을 함께 묶을 수 있는 기능은 무엇입니까?"
+    },
+    options: [
+      { en: "Tab Groups", ko: "탭 그룹" },
+      { en: "Bookmarks Bar", ko: "북마크바" },
+      { en: "Incognito Window", ko: "시크릿 창" },
+      { en: "Reading List", ko: "읽기 목록" }
+    ],
+    answer: 0,
+    type: 'single'
+  },
+  {
+    id: 9,
+    question: {
+      en: "Which of the following creates a task in Google Tasks? (Select all that apply)",
+      ko: "다음 중 Google Tasks에서 할 일을 생성하는 방법은 무엇입니까? (모두 선택)"
+    },
+    options: [
+      { en: "Dragging an email from Gmail to the Tasks sidebar", ko: "Gmail에서 이메일을 Tasks 사이드바로 드래그" },
+      { en: "Clicking 'Add Task' in the Calendar side panel", ko: "캘린더 측면 패널에서 '할 일 추가' 클릭" },
+      { en: "Assigning a task in a Google Doc comment", ko: "Google 문서 댓글에서 할 일 할당" },
+      { en: "Using the 'Create' button in Drive", ko: "드라이브의 '새 로 만들기' 버튼 사용" }
+    ],
+    answer: [0, 1, 2],
+    type: 'multiple'
+  },
+  {
+    id: 10,
+    question: {
+      en: "You need to schedule a meeting with three colleagues and want to find a time that works for everyone. What Calendar feature should you use?",
+      ko: "동료 3명과 회의 일정을 잡아야 하며 모두에게 적합한 시간을 찾고 싶습니다. 어떤 캘린더 기능을 사용해야 합니까?"
+    },
+    options: [
+      { en: "Share your calendar", ko: "캘린더 공유" },
+      { en: "Find a Time / Suggested Times", ko: "시간 찾기 / 추천 시간" },
+      { en: "Create distinct calendars for each person", ko: "각 사람에 대한 별도의 캘린더 만들기" },
+      { en: "Email them to ask", ko: "이메일로 물어보기" }
+    ],
+    answer: 1,
+    type: 'single'
+  },
+  {
+    id: 11,
+    question: {
+      en: "What visual indicator in Gmail informs you that an email was sent directly to you and not a mailing list?",
+      ko: "이메일이 메일링 리스트가 아닌 본인에게 직접 발송되었음을 알려주는 Gmail의 시각적 표시기는 무엇입니까?"
+    },
+    options: [
+      { en: "A star icon", ko: "별표 아이콘" },
+      { en: "Personal Level Indicators (> or >>)", ko: "개인 수준 표시기 (> 또는 >>)" },
+      { en: "Important marker (yellow tag)", ko: "중요 표시(노란색 태그)" },
+      { en: "The sender's image", ko: "보낸 사람의 이미지" }
+    ],
+    answer: 1,
+    type: 'single',
+    explanation: {
+      en: "Allowing personal level indicators in settings shows '>' for emails sent to you and others, and '>>' for emails sent only to you.",
+      ko: "설정에서 개인 수준 표시기를 허용하면 본인과 다른 사람에게 보낸 이메일에는 '>', 본인에게만 보낸 이메일에는 '>>'가 표시됩니다."
+    }
+  },
+  {
+    id: 12,
+    question: {
+      en: "You want to ensure that every time you open Chrome, your email, calendar, and drive tabs open automatically. What setting should you change?",
+      ko: "Chrome을 열 때마다 이메일, 캘린더, 드라이브 탭이 자동으로 열리도록 하고 싶습니다. 어떤 설정을 변경해야 합니까?"
+    },
+    options: [
+      { en: "On startup: Open the New Tab page", ko: "시작 그룹: 새 탭 페이지 열기" },
+      { en: "On startup: Continue where you left off", ko: "시작 그룹: 중단한 위치에서 계속하기" },
+      { en: "On startup: Open a specific page or set of pages", ko: "시작 그룹: 특정 페이지 또는 페이지 모음 열기" },
+      { en: "Appearance: Show Home button", ko: "모양: 홈 버튼 표시" }
+    ],
+    answer: 2,
+    type: 'single'
+  },
+  {
+    id: 13,
+    question: {
+      en: "Which Google Tool is best suited for creating an interactive presentation with live Q&A?",
+      ko: "실시간 Q&A가 포함된 대화형 프레젠테이션을 만드는 데 가장 적합한 Google 도구는 무엇입니까?"
+    },
+    options: [
+      { en: "Google Docs", ko: "Google 문서" },
+      { en: "Google Sheets", ko: "Google 스프레드시트" },
+      { en: "Google Slides", ko: "Google 프레젠테이션" },
+      { en: "Google Drawings", ko: "Google 드로잉" }
+    ],
+    answer: 2,
+    type: 'single'
+  },
+  {
+    id: 14,
+    question: {
+      en: "You want to create a mailing list for your school's math department to easily email everyone at once. Which tool should you use?",
+      ko: "학교 수학 부서를 위한 메일링 리스트를 만들어 한 번에 모든 사람에게 쉽게 이메일을 보내고 싶습니다. 어떤 도구를 사용해야 합니까?"
+    },
+    options: [
+      { en: "Google Groups", ko: "Google 그룹스" },
+      { en: "Google Sites", ko: "Google 사이트 도구" },
+      { en: "Google Forms", ko: "Google 설문지" },
+      { en: "Google Drive", ko: "Google 드라이브" }
+    ],
+    answer: 0,
+    type: 'single'
+  },
+  {
+    id: 15,
+    question: {
+      en: "Where can you find curated educational resources such as lesson plans and activities in Google Classroom?",
+      ko: "Google 클래스룸에서 수업 계획 및 활동과 같은 선별된 교육 자료를 어디에서 찾을 수 있습니까?"
+    },
+    options: [
+      { en: "The 'About' section", ko: "'정보' 섹션" },
+      { en: "There is no resource library", ko: "리소스 라이브러리가 없습니다." },
+      { en: "Google Workspace Marketplace", ko: "Google Workspace Marketplace" },
+      { en: "You must search Google Search externally", ko: "외부에서 Google 검색을 해야 합니다." }
+    ],
+    answer: 2,
+    type: 'single',
+    explanation: {
+      en: "While Classroom itself is a management tool, you can integrate apps and find resources via the Marketplace or add-ons.",
+      ko: "클래스룸 자체는 관리 도구이지만 Marketplace나 부가기능을 통해 앱을 통합하고 리소스를 찾을 수 있습니다."
+    }
   }
 ];
 
@@ -124,3 +289,42 @@ export const lv1Scenario: Scenario = {
     { en: "Post a welcome announcement in the Stream inviting students to introduce themselves.", ko: "스트림에 환영 공지를 게시하여 학생들에게 자기소개를 하도록 요청합니다." }
   ]
 };
+
+export const lv1Tips: StudyTip[] = [
+  {
+    id: 1,
+    category: "Drive",
+    title: { en: "Understanding Permissions", ko: "권한 이해하기" },
+    content: {
+      en: "Remember the hierarchy: Owner > Editor > Commenter > Viewer. Owners can delete files, Editors can change content, Commenters can suggest edits, and Viewers can only read.",
+      ko: "계층 구조를 기억하세요: 소유자 > 편집자 > 댓글 작성자 > 뷰어. 소유자는 파일을 삭제할 수 있고, 편집자는 내용을 변경할 수 있으며, 댓글 작성자는 수정을 제안할 수 있고, 뷰어는 읽기만 가능합니다."
+    }
+  },
+  {
+    id: 2,
+    category: "Gmail",
+    title: { en: "Search Operators", ko: "검색 연산자" },
+    content: {
+      en: "Mastering operators like 'from:', 'to:', 'has:attachment', 'is:unread', and 'older_than:' allows you to manage your inbox efficiently.",
+      ko: "'from:', 'to:', 'has:attachment', 'is:unread', 'older_than:'과 같은 연산자를 마스터하면 받은편지함을 효율적으로 관리할 수 있습니다."
+    }
+  },
+  {
+    id: 3,
+    category: "Classroom",
+    title: { en: "Differentiation via Assignments", ko: "과제를 통한 개별화" },
+    content: {
+      en: "You can assign work to specific students rather than the whole class. This is perfect for remedial work or advanced projects for gifted students.",
+      ko: "전체 학급이 아닌 특정 학생에게 과제를 할당할 수 있습니다. 이는 보충 학습이나 영재 학생을 위한 심화 프로젝트에 적합합니다."
+    }
+  },
+  {
+    id: 4,
+    category: "Chrome",
+    title: { en: "Omnibox Powers", ko: "옴니박스 활용" },
+    content: {
+      en: "The Chrome address bar (Omnibox) can do calculations, conversions, and even drag-and-drop URLs to your bookmarks bar.",
+      ko: "Chrome 주소 표시줄(옴니박스)은 계산, 변환을 수행할 수 있으며 URL을 북마크바로 드래그 앤 드롭할 수도 있습니다."
+    }
+  }
+];

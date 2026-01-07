@@ -1,4 +1,4 @@
-import { Question, Scenario } from './lv1';
+import { Question, Scenario, StudyTip } from './lv1';
 
 export const lv2Questions: Question[] = [
     {
@@ -79,6 +79,160 @@ export const lv2Questions: Question[] = [
         ],
         answer: [0, 2, 3],
         type: 'multiple'
+    },
+    {
+        id: 6,
+        question: {
+            en: "You want to create a custom map for your history class showing battle locations. Which tool is best for this?",
+            ko: "역사 수업을 위해 전투 위치를 보여주는 맞춤 지도를 만들고 싶습니다. 어떤 도구가 가장 적합합니까?"
+        },
+        options: [
+            { en: "Google Maps", ko: "Google 지도" },
+            { en: "Google My Maps", ko: "Google 내 지도" },
+            { en: "Google Earth", ko: "Google 어스" },
+            { en: "Google Street View", ko: "Google 스트리트 뷰" }
+        ],
+        answer: 1,
+        type: 'single',
+        explanation: {
+            en: "Google My Maps allows you to create custom maps with points, lines, and shapes, and save them to Drive.",
+            ko: "Google 내 지도를 사용하면 점, 선, 도형으로 맞춤 지도를 만들고 드라이브에 저장할 수 있습니다."
+        }
+    },
+    {
+        id: 7,
+        question: {
+            en: "In Google Sheets, you want to combine data from two different cells into one. Which function should you use?",
+            ko: "Google 스프레드시트에서 두 개의 다른 셀에 있는 데이터를 하나로 합치고 싶습니다. 어떤 함수를 사용해야 합니까?"
+        },
+        options: [
+            { en: "=SPLIT()", ko: "=SPLIT()" },
+            { en: "=JOIN()", ko: "=JOIN()" },
+            { en: "=CONCATENATE()", ko: "=CONCATENATE()" },
+            { en: "=MERGE()", ko: "=MERGE()" }
+        ],
+        answer: 2,
+        type: 'single'
+    },
+    {
+        id: 8,
+        question: {
+            en: "You want to create a Google Form that directs students to different questions based on their previous answers. What feature is this?",
+            ko: "이전 답변에 따라 학생들을 다른 질문으로 안내하는 Google 설문지를 만들고 싶습니다. 이 기능은 무엇입니까?"
+        },
+        options: [
+            { en: "Response Validation", ko: "응답 확인" },
+            { en: "Go to section based on answer", ko: "답변을 기준으로 섹션 이동" },
+            { en: "Shuffle question order", ko: "질문 순서 섞기" },
+            { en: "Required questions", ko: "필수 질문" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 9,
+        question: {
+            en: "Which function in Google Sheets allows you to search for a value in the first column of a range and return a value in the same row from another column?",
+            ko: "범위의 첫 번째 열에서 값을 검색하고 다른 열의 같은 행에 있는 값을 반환하는 Google 스프레드시트 함수는 무엇입니까?"
+        },
+        options: [
+            { en: "=HLOOKUP", ko: "=HLOOKUP" },
+            { en: "=SEARCH", ko: "=SEARCH" },
+            { en: "=VLOOKUP", ko: "=VLOOKUP" },
+            { en: "=FIND", ko: "=FIND" }
+        ],
+        answer: 2,
+        type: 'single'
+    },
+    {
+        id: 10,
+        question: {
+            en: "You want to perform a search in Google Drive for PDF files only. What operator should you use?",
+            ko: "Google 드라이브에서 PDF 파일만 검색하고 싶습니다. 어떤 연산자를 사용해야 합니까?"
+        },
+        options: [
+            { en: "type:pdf", ko: "type:pdf" },
+            { en: "file:pdf", ko: "file:pdf" },
+            { en: "ext:pdf", ko: "ext:pdf" },
+            { en: "format:pdf", ko: "format:pdf" }
+        ],
+        answer: 0,
+        type: 'single'
+    },
+    {
+        id: 11,
+        question: {
+            en: "Which YouTube feature allows you to add a poll or link to another video during playback?",
+            ko: "재생 중 설문조사를 추가하거나 다른 동영상으로 연결할 수 있는 YouTube 기능은 무엇입니까?"
+        },
+        options: [
+            { en: "End Screens", ko: "최종 화면" },
+            { en: "Cards", ko: "카드" },
+            { en: "Subtitles", ko: "자막" },
+            { en: "Chapters", ko: "챕터" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 12,
+        question: {
+            en: "You want faster access to specific folders in Drive without moving them from their original location. What should you use?",
+            ko: "원래 위치에서 폴더를 이동하지 않고 드라이브의 특정 폴더에 더 빠르게 액세스하고 싶습니다. 무엇을 사용해야 합니까?"
+        },
+        options: [
+            { en: "Make a copy", ko: "사본 만들기" },
+            { en: "Add to Starred", ko: "중요 문서함에 추가" },
+            { en: "Add shortcut to Drive", ko: "드라이브에 바로가기 추가" },
+            { en: "Move to Priority", ko: "우선순위로 이동" }
+        ],
+        answer: 2,
+        type: 'single'
+    },
+    {
+        id: 13,
+        question: {
+            en: "In Chrome, you want to save a set of tabs to open later on another device. What feature helps with this?",
+            ko: "Chrome에서 나중에 다른 기기에서 열 수 있도록 탭 세트를 저장하고 싶습니다. 도움이 되는 기능은 무엇입니까?"
+        },
+        options: [
+            { en: "Bookmarks", ko: "북마크" },
+            { en: "Reading List", ko: "읽기 목록" },
+            { en: "History -> Tabs from other devices", ko: "방문 기록 -> 다른 기기의 탭" },
+            { en: "Save page as...", ko: "다른 이름으로 저장..." }
+        ],
+        answer: 2,
+        type: 'single'
+    },
+    {
+        id: 14,
+        question: {
+            en: "Which tool is best for automating the creation of certificates for students who pass a quiz?",
+            ko: "퀴즈를 통과한 학생을 위한 수료증 생성을 자동화하는 데 가장 적합한 도구는 무엇입니까?"
+        },
+        options: [
+            { en: "Google Docs", ko: "Google 문서" },
+            { en: "Google Slides + Add-on (e.g., Autocrat)", ko: "Google 프레젠테이션 + 부가기능(예: Autocrat)" },
+            { en: "Google Sheets alone", ko: "Google 스프레드시트 단독" },
+            { en: "Google Keep", ko: "Google Keep" }
+        ],
+        answer: 1,
+        type: 'single'
+    },
+    {
+        id: 15,
+        question: {
+            en: "You want to create a website for your school portfolio that adapts to mobile devices automatically. What should you use?",
+            ko: "모바일 장치에 자동으로 적응하는 학교 포트폴리오용 웹사이트를 만들고 싶습니다. 무엇을 사용해야 합니까?"
+        },
+        options: [
+            { en: "Classic Google Sites", ko: "기존 Google 사이트 도구" },
+            { en: "New Google Sites", ko: "새 Google 사이트 도구" },
+            { en: "blogger.com", ko: "blogger.com" },
+            { en: "Google Docs published to web", ko: "웹에 게시된 Google 문서" }
+        ],
+        answer: 1,
+        type: 'single'
     }
 ];
 
@@ -100,3 +254,42 @@ export const lv2Scenario: Scenario = {
         { en: "Embed this chart into a new Google Doc report titled 'End of Term Analysis'.", ko: "이 차트를 '학기말 분석'이라는 제목의 새 Google 문서 보고서에 삽입하십시오." }
     ]
 };
+
+export const lv2Tips: StudyTip[] = [
+    {
+        id: 1,
+        category: "Sheets",
+        title: { en: "Pivot Tables Power", ko: "피벗 테이블의 힘" },
+        content: {
+            en: "Pivot tables allow you to summarize large datasets without formulas. Use them to find averages, counts, and sums grouped by category.",
+            ko: "피벗 테이블을 사용하면 수식 없이 대규모 데이터 세트를 요약할 수 있습니다. 카테고리별로 그룹화된 평균, 개수 및 합계를 찾는 데 사용하세요."
+        }
+    },
+    {
+        id: 2,
+        category: "Forms",
+        title: { en: "Branching Logic", ko: "분기 로직" },
+        content: {
+            en: "Use 'Go to section based on answer' to create adaptive quizzes or personalized surveys. Always ensure you have sections created first!",
+            ko: "'답변을 기준으로 섹션 이동'을 사용하여 적응형 퀴즈나 개인화된 설문을 만드세요. 항상 섹션을 먼저 만들어야 합니다!"
+        }
+    },
+    {
+        id: 3,
+        category: "Search",
+        title: { en: "Advanced Drive Search", ko: "고급 드라이브 검색" },
+        content: {
+            en: "Don't just scroll. Use the search bar dropdown to filter by file type (PDF, Spreadsheets), specific owners, or modification date.",
+            ko: "스크롤만 하지 마세요. 검색창 드롭다운을 사용하여 파일 형식(PDF, 스프레드시트), 특정 소유자 또는 수정 날짜별로 필터링하세요."
+        }
+    },
+    {
+        id: 4,
+        category: "YouTube",
+        title: { en: "Playlist Curation", ko: "재생목록 큐레이션" },
+        content: {
+            en: "You can curate existing videos into playlists for students. You don't always have to create your own content.",
+            ko: "기존 동영상을 학생들을 위한 재생목록으로 큐레이션할 수 있습니다. 항상 자신의 콘텐츠를 직접 만들 필요는 없습니다."
+        }
+    }
+];
